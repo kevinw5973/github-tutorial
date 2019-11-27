@@ -34,7 +34,9 @@ Extra Info: Repository is the same thing as a Directory but it has Git initializ
 
 ---
 ## Workflow & Commands
-* When working in your IDE 
+* When working in your IDE, it never hurts to do `git status` every now and then to check if you have the files you want to commit on stage.
+* After you edit you codes, you add them to the stage using `git add <file>` (for one specific file) or `git add .` (to add all the files within your repository).
+* After that, you can save it by using the command `git commit -m ""` with your message of what you did inside the quotation marks.
 
 
 ---
