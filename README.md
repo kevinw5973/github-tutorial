@@ -11,7 +11,7 @@ by Kevin Wang
 
 ##### **Github Account**:
 1. To make a Github account, you have to [github.com](https://github.com/).
-2. Click ![Sign Up](github-signup.png).
+2. Click ![Sign Up](https://paste.pics/7CV3G).
 3. Fill in your personal info and then follow the instructions.
 
 ##### **IDE** (Integrated Development Environment):
