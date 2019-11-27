@@ -11,12 +11,14 @@ by Kevin Wang
 
 ##### **Github Account**:
 1. To make a Github account, you have to [github.com](https://github.com/).
-2. Click Sign Up.
+2. Click ![Sign Up](github-signup).  
 3. Fill in your personal info and then follow the instructions. 
 
 ##### **IDE** (Integrated Development Environment):
 
-1.
+1. To set up your IDE you first have to make a Github account.
+2. After doing that, go to [ide.cs50.io](https://ide.cs50.io).
+3. After that, you can go to [https://github.com/hstatsep/ide50](https://github.com/hstatsep/ide50) and follow the instructions.
 
 
 ---
