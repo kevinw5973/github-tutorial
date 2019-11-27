@@ -10,7 +10,7 @@ by Kevin Wang
 ## Initial Setup
 * To make a Github account, you have to [github.com](https://github.com/).
 * Click Sign Up.
-* Fill in your personal info and then follow the instruction. 
+* Fill in your personal info and then follow the instructions. 
 
 
 
