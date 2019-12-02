@@ -35,7 +35,7 @@ Require one time authentication unless you switch devices| Requires authenticati
 
 SSH would be easier to use since you don't need to type in your username and password everytime you do the commands listed above.
 
-You can switch to SSH from HTTPS or vice versa before cloning/downloading by click **Use SSH** or **Use HTTPS**  
+You can switch to SSH from HTTPS or vice versa before cloning/downloading by click **Use SSH** or **Use HTTPS**
       ![Cloning/Downloading](https://help.github.com/assets/images/help/repository/https-url-clone.png)
 
 
@@ -51,9 +51,9 @@ You can switch to SSH from HTTPS or vice versa before cloning/downloading by cli
 
 ##### **Creating in Git**
 1. In your [IDE](https://ide.cs50.io), go into the folder you want to make a new repo in.
-2. Use `mkdir <file-name>` to make a new directory or you can edit another existing repo by forking and then pulling or by cloning.  
-    1. Forking and cloning makes a copy of the repository. However, forking also make a new repository while cloning doesn't. This means that you won't be able to `git commit -m ""` and `git push` if you use `git clone`. Forking allows you to make changes to the original by requesting a merge.
-3. Do `git init` as it will initialize git and make the directory into a repository.  
+2. Use `mkdir <file-name>` to make a new directory or you can edit another existing repo by forking and then pulling or by cloning.
+    1. Forking and cloning makes a copy of the repository. However, forking also make a new repository in your remote while cloning doesn't. This means that you won't be able to `git commit -m ""` and `git push` if you use `git clone`. Forking allows you to make changes to the original by requesting a merge.
+3. Do `git init` as it will initialize git and make the directory into a repository.
 
 
 *Extra Info: Repository is the same thing as a Directory but it has Git initialized. Merge can only be done in the remote.*
@@ -61,7 +61,7 @@ You can switch to SSH from HTTPS or vice versa before cloning/downloading by cli
 ---
 ## Workflow & Commands
 * When working in your IDE, it never hurts to do `git status` every now and then to check if you have the files you want to commit on stage.
-* After you edit you codes using `c9 <file name>`, you add them to the stage using `git add <file>` (for one specific file) or `git add .` (to add all the files within your repository).
+* After you edit you codes using `c9 <file name>`, you add them to the stage using `git add <file name>` (for one specific file) or `git add .` (to add all the files within your repository).
 * After that, you can save it by using the command `git commit -m ""` with your message of what you did inside the quotation marks.
 * You can push it to the remote (which is github.com) using the command `git push -u origin master`. You can also just use `git push`a fter the first command since `-u` in the command tells git to remember the repo you want to push to.
 
@@ -70,7 +70,7 @@ You can switch to SSH from HTTPS or vice versa before cloning/downloading by cli
 
 ---
 ## Rolling Back Changes
-* If you accidentally initialize git in the wrong directory, you can remove it by using the command: `rm -rf .git`.  
+* If you accidentally initialize git in the wrong directory, you can remove it by using the command: `rm -rf .git`.
     *Note: You can only remove a file/folder in the parent folder*
 * If you don't want a file on the stage after doing `git add .`, you can remove it by using `git reset HEAD <file name>`.
 * If you want to go back to any previous commits you can use `git revert <commit id>` (you can find the commit id by using `git log`) or using `git revert HEAD` for your last commit.
