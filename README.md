@@ -61,9 +61,9 @@ You can switch to SSH from HTTPS or vice versa before cloning/downloading by cli
 ---
 ## Workflow & Commands
 * When working in your IDE, it never hurts to do `git status` every now and then to check if you have the files you want to commit on stage.
-* After you edit you codes, you add them to the stage using `git add <file>` (for one specific file) or `git add .` (to add all the files within your repository).
+* After you edit you codes using `c9 <file name>`, you add them to the stage using `git add <file>` (for one specific file) or `git add .` (to add all the files within your repository).
 * After that, you can save it by using the command `git commit -m ""` with your message of what you did inside the quotation marks.
-* You can push it to the remote (which is github.com) using the command `git push -u origin master`. You can also just use `git push`after the first command since `-u` in the command tells git to remember the repo.
+* You can push it to the remote (which is github.com) using the command `git push -u origin master`. You can also just use `git push`a fter the first command since `-u` in the command tells git to remember the repo you want to push to.
 
 
 
@@ -72,7 +72,10 @@ You can switch to SSH from HTTPS or vice versa before cloning/downloading by cli
 ## Rolling Back Changes
 * If you accidentally initialize git in the wrong directory, you can remove it by using the command: `rm -rf .git`.  
     *Note: You can only remove a file/folder in the parent folder*
-* If you don't want a file on the stage after doing `git add .`, you can remove it by using `git reset HEAD <file>`.
-* If you want to revert a change after commiting, you can go back to any previous commits by using `git revert <commit id>` (you can find the commit id by using `git log`) or using `git revert HEAD` for the last commit.
-* You can undo a commit using `git reset HEAD~` and then `git checkout -- <file name>`.
-* 
+* If you don't want a file on the stage after doing `git add .`, you can remove it by using `git reset HEAD <file name>`.
+* If you want to go back to any previous commits you can use `git revert <commit id>` (you can find the commit id by using `git log`) or using `git revert HEAD` for your last commit.
+* You can undo a previous commit without undoing the add and the edits by using `git reset --soft HEAD~1`.
+* You can undo a previous commit and `git add` by using `git reset HEAD~1`
+    * `~1` means the previous commit.
+* You can undo a previous commit, add, and the edit by using `git reset --hard HEAD~1`
+* You can undo a push by doing `git log` and get the ID for the commit you want to revert to and do `git revert <commit id>`. Then, you do `git reset --hard` to make everything match the commit in your local and do `git push origin +master`.
