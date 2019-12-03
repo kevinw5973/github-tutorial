@@ -50,9 +50,9 @@ You can switch to SSH from HTTPS or vice versa before cloning/downloading by cli
 4. Then click "**Create repository**"
 
 ##### **Creating in Git**
-1. In your [IDE](https://ide.cs50.io), go into the folder you want to make a new repo in.
-2. Use `mkdir <file-name>` to make a new directory or you can edit another existing repo by forking and then pulling or by cloning.
-    1. Forking and cloning makes a copy of the repository. However, forking also make a new repository in your remote while cloning doesn't. This means that you won't be able to `git commit -m ""` and `git push` if you use `git clone`. Forking allows you to make changes to the original by requesting a merge.
+1. In your [IDE](https://ide.cs50.io), go into a directory/folder that you think your new project would be organize in. Otherwise, make a new directory/folder.
+2. Use `mkdir <file-name>` to make a new directory/folder or you can edit another existing repo by forking and then pulling or by cloning. You can make a new file by using `touch <file name>`.
+    1. Forking and cloning makes a copy of the repository. However, forking also make a new repository in your remote while cloning doesn't. This means that you won't be able to `git commit -m "<your message>"` and `git push` if you use `git clone`. Forking allows you to make changes to the original by requesting a merge.
 3. Do `git init` as it will initialize git and make the directory into a repository.
 
 
