@@ -9,7 +9,7 @@ Doesn't require Github |Requires Git
 Has version control- meaning that it help organize and keep track of changes |Allows collaboration
 
 
-*Extra Info: Cloud is a server thats connected to the internet.*
+*Extra Info: Cloud is a server that's connected to the internet.*
 
 
 ---
@@ -30,10 +30,10 @@ Has version control- meaning that it help organize and keep track of changes |Al
 ##### **SSH vs. HTTPS**:
 SSH |HTTPS
 ----|----
-Know as Secure Shell| Known has Hypertext Transfer Protocol Secure
-Require one time authentication unless you switch devices| Requires authentication everytime you try to `git clone`, `git pull`, `git push`.
+Known as Secure Shell| Known has Hypertext Transfer Protocol Secure
+Require one time authentication unless you switch devices| Requires authentication every time you try to `git clone`, `git pull`, `git push`.
 
-SSH would be easier to use since you don't need to type in your username and password everytime you do the commands listed above.
+SSH would be easier to use since you don't need to type in your username and password every time you do the commands listed above.
 
 You can switch to SSH from HTTPS or vice versa before cloning/downloading by click **Use SSH** or **Use HTTPS**
       ![Cloning/Downloading](https://help.github.com/assets/images/help/repository/https-url-clone.png)
@@ -50,7 +50,7 @@ You can switch to SSH from HTTPS or vice versa before cloning/downloading by cli
 4. Then click "**Create repository**"
 
 ##### **Creating in Git**
-1. In your [IDE](https://ide.cs50.io), go into a directory/folder that you think your new project would be organize in. Otherwise, make a new directory/folder.
+1. In your [IDE](https://ide.cs50.io), go into a directory/folder that you think your new project would be organized in. Otherwise, make a new directory/folder.
 2. Use `mkdir <file-name>` to make a new directory/folder or you can edit another existing repo by forking and then pulling or by cloning. You can make a new file by using `touch <file name>`.
     1. Forking and cloning makes a copy of the repository. However, forking also make a new repository in your remote while cloning doesn't. This means that you won't be able to `git commit -m "<your message>"` and `git push` if you use `git clone`. Forking allows you to make changes to the original by requesting a merge.
 3. Do `git init` as it will initialize git and make the directory into a repository.
