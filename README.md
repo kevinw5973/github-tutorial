@@ -62,8 +62,8 @@ You can switch to SSH from HTTPS or vice versa before cloning/downloading by cli
 ## Workflow & Commands
 * When working in your IDE, it never hurts to do `git status` every now and then to check if you have the files you want to commit on stage.
 * After you edit you codes using `c9 <file name>`, you add them to the stage using `git add <file name>` (for one specific file) or `git add .` (to add all the files within your repository).
-* After that, you can save it by using the command `git commit -m ""` with your message of what you did inside the quotation marks.
-* You can push it to the remote (which is github.com) using the command `git push -u origin master`. You can also just use `git push`a fter the first command since `-u` in the command tells git to remember the repo you want to push to.
+* After that, you can save it by using the command `git commit -m "<your message>"` with your message of what you did inside the quotation marks.
+* You can push it to the remote (which is github.com) using the command `git push -u origin master`. You can also just use `git push` after the first command since `-u` in the command tells git to remember the repo you want to push to.
 
 
 
