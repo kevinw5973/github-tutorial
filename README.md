@@ -53,10 +53,10 @@ You can switch to SSH from HTTPS or vice versa before cloning/downloading by cli
 1. In your [IDE](https://ide.cs50.io), go into a directory/folder that you think your new project would be organized in. Otherwise, make a new directory/folder.
 2. Use `mkdir <file-name>` to make a new directory/folder or you can edit another existing repo by forking and then pulling or by cloning. You can make a new file by using `touch <file name>`.
     1. Forking and cloning makes a copy of the repository. However, forking also makes a new repository in your remote while cloning doesn't. This means that you won't be able to `git commit -m "<your message>"` and `git push` if you use `git clone`. Forking allows you to make changes to the original by requesting a merge.
-3. Do `git init` as it will initialize git and make the directory into a repository.
+3. To initialize Git, do `git init` as it makes the directory into a repository.
 
 
-*Extra Info: Repository is the same thing as a Directory but it has Git initialized. Merge can only be done in the remote.*
+*Extra Info: Repository is the same thing as a Directory but it has Git initialized which means it shows up in Github as well. Merge can only be done in the remote.*
 
 ---
 ## Workflow & Commands
@@ -70,7 +70,7 @@ You can switch to SSH from HTTPS or vice versa before cloning/downloading by cli
 
 ---
 ## Rolling Back Changes
-* If you accidentally initialize git in the wrong directory, you can remove it by using the command: `rm -rf .git`.
+* If you accidentally initialize git in the wrong directory, you can remove it by using the command: `rm -rf .git`.  
     *Note: You can only remove a file/folder in the parent folder*
 * If you don't want a file on the stage after doing `git add .`, you can remove it by using `git reset HEAD <file name>`.
 * If you want to go back to any previous commits you can use `git revert <commit id>` (you can find the commit id by using `git log`) or using `git revert HEAD` for your last commit.
